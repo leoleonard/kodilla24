@@ -1,0 +1,27 @@
+{
+  "name": "kodilla24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js",
+    "test:watch": "mocha -w -b index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoleonard/kodilla24.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoleonard/kodilla24/issues"
+  },
+  "homepage": "https://github.com/leoleonard/kodilla24#readme",
+  "devDependencies": {
+    "mocha": "^5.0.4"
+  },
+  "dependencies": {
+    "chai": "^4.1.2"
+  }
+}
