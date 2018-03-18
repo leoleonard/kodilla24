@@ -5,8 +5,11 @@ const calculateTotalPoints = (distance, hillSize, kPoint, styleNotes, windFactor
   const distancePoints = calculateDistancePoints(distance, hillSize, kPoint);
   const stylePoints = calculateStylePoints(styleNotes);
 
-  return Math.round(distancePoints + stylePoints + windFactor + gateFactor);
-  //return Math.floor(distancePoints + stylePoints + windFactor + gateFactor);
+  // return Math.round(distancePoints + stylePoints + windFactor + gateFactor);
+  //return Math.ceil(distancePoints + stylePoints + windFactor + gateFactor)
+  return Math.ceil((distancePoints + stylePoints + windFactor + gateFactor)*10)/10;
+  // return Math.round((distancePoints + stylePoints + windFactor + gateFactor)*10)/10;
+
 };
 
 module.exports = calculateTotalPoints;

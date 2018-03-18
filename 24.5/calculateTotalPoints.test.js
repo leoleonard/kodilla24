@@ -16,7 +16,7 @@ describe('Total Points', () => {
         it('should return TOTAL for normal Pjongjang - Hula', () => {
                 const actual = calculateTotalPoints(111, 'normal', 98, [19.0, 19.5, 19.0, 19.0, 19.0], 3.2, -14.4);
 
-                const expected = 131.9;
+                const expected = 131.8;
 
                 assert.equal(actual, expected);
             });
